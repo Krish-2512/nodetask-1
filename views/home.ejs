@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rendering Assets with Express.js</title>
+    <link rel="stylesheet" href="/css/home.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Get different products</h1>
+      
+    </header>
+
+    <main>
+      <!-- <section>
+        <h2>Add Product</h2>
+        <form method="POST" actions="/add-product">
+        <p>
+          <label for="title">Products</label>
+          <input type="'text" class="form-control" name="title"/>
+        </p>
+        <p>
+          <button>Add Product</button>
+        </p>
+        </form>
+      </section> -->
+      <section>
+        <h2>Products</h2>
+        
+      </section>
+      <section>
+        <h2>Cars</h2>
+       <ul>
+        <%cars.forEach((car)=>{%>
+        <li>
+          <%=car.Model%>-<%=car.Price%>
+        </li>
+        <%})%>
+       </ul>
+      </section>
+      <section>
+        <h2>Bikes</h2>
+        <ul>
+          <%bikes.forEach((bike)=>{%>
+          <li>
+            <%=bike.Model%>-<%=bike.Price%>
+          </li>
+          <%})%>
+         </ul>
+      </section>
+      <section>
+        <h2>TV</h2>
+        <ul>
+          <%tv.forEach((tv)=>{%>
+          <li>
+            <%=tv.Model%>-<%=tv.Price%>
+          </li>
+          <%})%>
+         </ul>
+      </section>
+      <section>
+        <h2>Mobiles</h2>
+        <ul>
+          <%mobile.forEach((mobile)=>{%>
+          <li>
+            <%=mobile.Model%>-<%=mobile.Price%>
+          </li>
+          <%})%>
+         </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; by @WebDevelopment</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
